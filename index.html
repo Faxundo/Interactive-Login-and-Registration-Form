@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/28c2eb92f3.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="login_box" id="select_option">
+      <div>
+        <button class="important_button" id="login_button">LOG IN</button>
+      </div>
+      <div>
+        <button class="important_button" id="register_button">SIGN IN</button>
+      </div>
+    </div>
+
+    <div class="login_box" id="login_form">
+      <form>
+        <div class="user_input">
+          <div class="icon_box"><i class="fa-solid fa-user"></i></div>
+          <input id="username_login" placeholder="Username" type="text" autocomplete="username" required/>
+        </div>
+        <div class="user_input">
+          <div class="icon_box"><i class="fa-solid fa-lock"></i></div>
+          <input id="password_login" placeholder="Password" type="password" autocomplete="current-password" required/>
+        </div>
+        <button class="important_button" id="login" type="submit">LOG IN</button>
+      </form>
+    </div>
+
+    <div class="login_box"  id="register_form">
+      <form>
+        <div class="user_input">
+          <div class="icon_box"><i class="fa-solid fa-user"></i></div>
+          <input id="username_register" placeholder="Username" type="text" autocomplete="username" required/>
+        </div>
+        <div class="user_input">
+          <div class="icon_box"><i class="fa-solid fa-envelope"></i></i></div>
+          <input id="email_register" placeholder="Email" type="email" required/>
+        </div>
+        <div class="user_input">
+          <div class="icon_box"><i class="fa-solid fa-lock"></i></div>
+          <input id="password_register" placeholder="Password" type="password" autocomplete="new-password" required/>
+        </div>
+
+          <div class="icon_box" id="vision_password">
+            <button type="button" tabindex="-1"><i class="fa-solid fa-eye" id="view_password" data-state="0"></i></button>
+            <button type="button" tabindex="-1"><i class="fa-solid fa-eye-slash" id="hide_password" data-state="1"></i></button>
+          </div>
+
+        <div class="user_input">
+          <div class="icon_box"><i class="fa-solid fa-check"></i></i></div>
+          <input id="password_register_confirm" placeholder="Confirm password" type="password" required/>
+        </div>
+        <button class="important_button" id="register" type="submit">SIGN IN</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

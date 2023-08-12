@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+:root {
+  --color-1: #000000;
+  --color-2: #1c4f46;
+  --color-3: #276f62;
+  --color-4: #318f7f;
+  --color-5: #3bb09b;
+  --color-6: #4fc6b1;
+  --color-7: #6ed1c0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-5);
+}
+
+.login_box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 15%;
+
+  width: 30%;
+  height: 40vh;
+  background-color: var(--color-3);
+  box-shadow: 10px 10px var(--color-1);
+  border-radius: 0.4rem;
+}
+
+#login_form,
+#register_form {
+  display: none;
+}
+
+.important_button {
+  background-color: var(--color-4);
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 5px 5px var(--color-1);
+  cursor: pointer;
+}
+
+.important_button:hover {
+  outline: 2px solid var(--color-7);
+}
+
+.important_button:active {
+  background-color: var(--color-7);
+}
+
+#login_button {
+  margin-right: 30px;
+}
+
+#login_button,
+#register_button {
+  width: 10rem;
+  height: 4rem;
+}
+
+input {
+  height: 1.5rem;
+  width: 15rem;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  text-indent: 4px;
+  user-select: text;
+}
+
+input:focus {
+  outline: 2px solid var(--color-7);
+}
+
+#login,
+#register {
+  width: 100px;
+  height: 50px;
+}
+
+.icon_box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-1);
+  width: 20px;
+  height: 1.5rem;
+}
+
+/*View Password*/ 
+
+#vision_password {
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+#view_password {
+  position: absolute;
+  top: 312px;
+  left: 825px;
+}
+
+#hide_password {
+  position: absolute;
+  top: 312px;
+  left: 824px;
+}
+
+#vision_password button {
+ background-color: var(--color-3);
+ cursor: pointer;
+ outline: none;
+ border: none;
+}
